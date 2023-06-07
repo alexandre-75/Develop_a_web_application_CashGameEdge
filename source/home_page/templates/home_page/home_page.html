@@ -1,6 +1,17 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1><a href="{% url 'paris_flux_paris' %}">Cash Game à Paris</a></h1>
-    <h1><a href="{% url 'province_province_sectorization' %}">Cash Game en Province</a></h1>
+    <div class="container">
+        <h1 class="text_home_page">Je recherche une partie :</h1>
+        <div class="under_container_home_page">
+            <div class="container_title_paris">
+                <h1 class="title_paris title"> à Paris</h1>
+                <button class="btn btn_paris" type="button"><a href="{% url 'paris_flux_paris' %}">Cliquez ici</a></button>
+            </div>
+            <div class="container_title_province">
+                <h1 class="title_province title">en Province</h1>
+                <button class="btn btn_province" type="button"><a href="{% url 'province_province_sectorization' %}">Cliquez ici</a></button>
+            </div>
+        </div>
+    </div>
 {% endblock %}

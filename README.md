@@ -1,1 +1,1 @@
-<p align="center"><img src="pictures\klim-musalimov-06jmHOnClVU-unsplash.jpg" alt="logo" /></p>
+<p align="center"><img src="pictures\145800.jpg" alt="logo" /></p>
