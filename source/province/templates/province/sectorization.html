@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="sectorization">
+        <div class="sectorization_north">
+            <h1 class="sectorization_north_west"><a href="{% url 'province_province_north_west' %}">Cash Game dans le Nord Ouest</a></h1>
+            <h1 class="sectorization_north_east"><a href="{% url 'province_province_north_east' %}">Cash Game dans le Nord Est</a></h1>
+        </div>
+        <div class"sectorization_south">
+            <h1 class="sectorization_south_west"><a href="{% url 'province_province_south_west' %}">Cash Game dans le Sud Ouest</a></h1>
+            <h1 class="sectorization_south_east"><a href="{% url 'province_province_south_east' %}">Cash Game dans le Sud Est</a></h1>
+        </div>
+    </div>
+{% endblock %}
