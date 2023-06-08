@@ -1,3 +1,9 @@
 from django.contrib import admin
+from .models import ParisEtablissement
 
-# Register your models here.
+
+@admin.register(ParisEtablissement)
+class ParisEtablissementAdmin(admin.ModelAdmin):
+    
+    list_display = ["name","variant","limit","phone"]
+    ordering = ["limit"]
