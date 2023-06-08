@@ -3,12 +3,34 @@
 {% block content %}
     <div class="sectorization">
         <div class="sectorization_north">
-            <h1 class="sectorization_north_west"><a href="{% url 'province_province_north_west' %}">Cash Game dans le Nord Ouest</a></h1>
-            <h1 class="sectorization_north_east"><a href="{% url 'province_province_north_east' %}">Cash Game dans le Nord Est</a></h1>
+
+            <div class="sectorization_north_west">
+                <img class="img_province" src="/static/pictures/2.jpg" alt="north_west">
+                <h1 class="title_north_west ">Cash Game dans le Nord Ouest</h1>
+                <button class="btn_north_west btn_province" type="button"><a href="{% url 'province_province_north_west' %}">Cliquez ici</a></button>
+            </div>
+
+            <div class="sectorization_north_east">
+                <img class="img_province" src="/static/pictures/3.jpg" alt="north_east">
+                <h1 class="title_north_east">Cash Game dans le Nord Est</h1>
+                <button class="btn_north_east btn_province" type="button"><a href="{% url 'province_province_north_east' %}">Cliquez ici</a></button>
+            </div>
+
         </div>
-        <div class"sectorization_south">
-            <h1 class="sectorization_south_west"><a href="{% url 'province_province_south_west' %}">Cash Game dans le Sud Ouest</a></h1>
-            <h1 class="sectorization_south_east"><a href="{% url 'province_province_south_east' %}">Cash Game dans le Sud Est</a></h1>
+        <div class="sectorization_south">
+
+            <div class="sectorization_south_west">
+                <img class="img_province" src="/static/pictures/4.jpg" alt="south_west">
+                <h1 class="title_south_west ">Cash Game dans le Sud Ouest</h1>
+                <button class="btn_south_west btn_province" type="button"><a href="{% url 'province_province_south_west' %}">Cliquez ici</a></button>
+            </div>
+
+            <div class="sectorization_south_east">
+                <img class="img_province" src="/static/pictures/1.jpg" alt="south_east">
+                <h1 class="title_south_east">Cash Game dans le Sud Est</h1>
+                <button class="btn_south_east btn_province" type="button"><a href="{% url 'province_province_south_east' %}">Cliquez ici</a></button>
+            </div>
+
         </div>
     </div>
 {% endblock %}
