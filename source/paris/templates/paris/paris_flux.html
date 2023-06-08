@@ -1,5 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <p>liste cash à Paris</p>
+    {% for i in etablissements %}
+        <div class="display_clubs">
+            <div> Name : {{ i.name }}</div>
+            <div> Variant : {{ i.variant }}</div>
+            <div> Limit : {{ i.limit }}</div>
+            <button class="btn_details_clubs" type="button">+ d'informations</button>
+        </div>
+    {% endfor %}
+    <button class="btn_return" type="button"><a href="{% url 'home_page_index' %}">Retour</a></button>
 {% endblock %}

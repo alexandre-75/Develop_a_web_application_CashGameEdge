@@ -1,0 +1,20 @@
+.display_clubs {
+    display: flex;
+    justify-content: space-between;
+    margin : 40px 20px 0 20px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black;
+    font-size: xx-large;
+    box-shadow: 8px 8px 4px gray;
+    background-color: burlywood;
+}
+.btn_return {
+    position: absolute;
+    top: 5%;
+    right:5%;
+    padding: 10px 5px 10px 5px;
+    cursor: pointer;
+    background: #ff3652;
+    color: #fff;
+    font-size: 18px;
+}
