@@ -1,6 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <p>sw</p>
+    {% for i in sw %}
+        <div class="display_clubs">
+            <div> Name : {{ i.name }}</div>
+            <div> Variant : {{ i.variant }}</div>
+            <div> Limit : {{ i.limit }}</div>
+            <button class="btn_details_clubs" type="button">+ d'informations</button>
+        </div>
+    {% endfor %}
     <button class="btn_return" type="button"><a href="{% url 'province_province_sectorization' %}">Retour</a></button>
 {% endblock %}
