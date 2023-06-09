@@ -7,6 +7,7 @@
     font-size: xx-large;
     box-shadow: 8px 8px 4px gray;
     background-color: burlywood;
+    z-index: 1;
 }
 .btn_return {
     position: absolute;
